@@ -296,6 +296,7 @@ export type HeaderMode = 'float' | 'screen' | 'none';
 
 export type HeaderProps = NavigationSceneRendererProps & {
   mode: HeaderMode,
+  backgroundImage?: React.Node,
   router: NavigationRouter<NavigationState, NavigationStackScreenOptions>,
   getScreenDetails: NavigationScene => NavigationScreenDetails<
     NavigationStackScreenOptions
