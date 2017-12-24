@@ -281,7 +281,7 @@ class Header extends React.PureComponent<Props, State> {
       hasLeftComponent: !!left,
       hasRightComponent: !!right,
     });
-    const { backgroundImage = null } = this.props;
+    const { backgroundImage = null } = props;
 
     return (
       <View
