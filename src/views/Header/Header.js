@@ -281,12 +281,14 @@ class Header extends React.PureComponent<Props, State> {
       hasLeftComponent: !!left,
       hasRightComponent: !!right,
     });
+    const { backgroundImage = null } = this.props;
 
     return (
       <View
         style={[StyleSheet.absoluteFill, styles.header]}
         key={`scene_${props.scene.key}`}
       >
+        {backgroundImage}
         {title}
         {left}
         {right}
